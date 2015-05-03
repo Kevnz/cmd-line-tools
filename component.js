@@ -6,8 +6,6 @@ let pluralize = require('pluralize');
 let fs = require('fs');
 let argv = require('minimist')(process.argv.slice(2));
 
-let app = argv.a || 'shopping';
-
 let component = to.lower(argv.c);
 let schemaFile = `${component}.json`;
 let schemaPath = path.join('./models/schemas', schemaFile);
